@@ -3,9 +3,9 @@ var time = require('./OStime.js');
 
 function getOSinfo() {
     var type = os.type();
-    if(type === 'Darwin') {
+    if (type === 'Darwin') {
         type = 'OSX';
-    } else if(type === 'Windows_NT') {
+    } else if (type === 'Windows_NT') {
         type = 'Windows';
     }
     var release = os.release();
